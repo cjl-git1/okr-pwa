@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="OKR">
+  <meta name="theme-color" content="#0a84ff">
+  <meta name="description" content="个人 OKR 管理 · 目标与关键成果">
+  <title>OKR</title>
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">OKR</span>
+      </div>
+      <div class="actions">
+        <button id="btn-period" class="btn ghost" type="button" title="切换周期">
+          <span id="current-period-label">—</span>
+          <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="btn-backup" class="btn ghost" type="button" title="备份 / 恢复">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="content">
+    <!-- 动态渲染 -->
+  </main>
+
+  <button id="fab" class="fab" type="button" aria-label="新建目标">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+
+  <div id="modal-root"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
